@@ -1,0 +1,22 @@
+Find the first occurrence of attribute by looking in object, then in all classes above it,
+from bottom to top and left to right.
+
+In terms of search trees, an instance inherits attributes from its class, and a class inherits
+attributes from all classes above it in the tree.
+
+The primary difference between classes and instances is that classes are a kind of factory for generating instances.
+
+Methods can be called through either an instance—bob.giveRaise()— or a class—Employee.giveRaise(bob)— and both forms
+serve purposes in our scripts. These calls also illustrate both of the key ideas in OOP:
+to run a bob.giveRaise() method call, Python:
+1. Looks up giveRaise from bob, by inheritance search
+2. Passes bob to the located giveRaise function, in the special self argument
+When you call Employee.giveRaise(bob), you’re just performing both steps yourself.
+
+
+classes support code reuse in ways, that other Python program components cannot. In fact, this is their highest purpose
+
+Notice that you can make instances of any class in a tree, not just the ones at the bottom
+—the class you make an instance from determines the level at which the attribute search
+will begin, and thus which versions of the methods it will employ
+
