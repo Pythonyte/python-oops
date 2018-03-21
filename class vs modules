@@ -1,0 +1,5 @@
+Classes are always nested inside a module; they are attributes of a module object.
+Classes and modules are both namespaces, but classes correspond to statements
+(not entire files) and support the OOP notions of multiple instances, inheritance,
+and operator overloading (modules do not). In a sense, a module is like a single-
+instance class, without inheritance, which corresponds to an entire file of code
