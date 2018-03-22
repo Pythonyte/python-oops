@@ -8,6 +8,9 @@ defines a superclass’s method to customize it, but someThingElse defines somet
 new to extend:
 """
 
+
+
+"""
 class Person:
     def lastName(self): ...
     def giveRaise(self): ...
@@ -23,7 +26,6 @@ tom.giveRaise() # Customized version
 tom.someThingElse() # Extension here
 print(tom) # Inherited overload method
 
-"""
 • Although we could have simply coded Manager from scratch as new, independent
 code, we would have had to reimplement all the behaviors in Person that are the
 same for Managers.
