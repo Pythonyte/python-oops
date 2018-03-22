@@ -41,6 +41,20 @@ person = Person(name='ono', age=21)
 print('my name is {0.name}. I am {0.age} yrs old'.format(person))
 
 
+## for named arguments
+# way 8
+print('my name is {name}. I am {age} yrs old'.format(name='ono', age=21))
+
+
+## by unpacking dicts
+# way 9
+person = {
+    'name':'ono',
+    'age': 21,
+}
+print('my name is {name}. I am {age} yrs old'.format(**person))
+
+
 
 ## Some more templates
 
@@ -52,3 +66,17 @@ html = {
 }
 
 print('<{0[tag]}> {0[text]} </{0[tag]}>'.format(html))
+
+"""
+Output:
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+my name is ono. I am 21 yrs old
+<p> goal </p>
+"""
