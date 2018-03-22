@@ -24,3 +24,4 @@ Class namespace have class attributes and instance namespaces have instance attr
 {'price': 100, 'num': 6}
 {'__module__': '__main__', '__add__': <function __add__ at 0x7fdb9beec7d0>, '__init__': <function __init__ at 0x7fdb9beec758>, '__doc__': None}
 """
+

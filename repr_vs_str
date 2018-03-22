@@ -1,0 +1,9 @@
+the __repr__ method is often used to provide
+an as-code low-level display of an object when present,
+
+and __str__ is reserved for more user-friendly informational displays like ours here.
+
+Sometimes classes provide both a __str__ for user-friendly displays and a __repr__ with extra details for developers to view.
+
+Because printing runs __str__ and the interactive prompt echoes results with __repr__,
+this can provide both target audiences with an appropriate display.
